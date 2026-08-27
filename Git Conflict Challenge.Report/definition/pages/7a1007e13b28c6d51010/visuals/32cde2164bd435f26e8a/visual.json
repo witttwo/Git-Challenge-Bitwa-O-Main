@@ -4,10 +4,10 @@
   "position": {
     "x": 71.333363850911468,
     "y": 402.00002034505212,
-    "z": 8003,
+    "z": 6000,
     "height": 860,
     "width": 500,
-    "tabOrder": 4006
+    "tabOrder": 9000
   },
   "visual": {
     "visualType": "shape",
@@ -53,7 +53,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#FFA271'"
+                      "Value": "'#FEA474'"
                     }
                   }
                 }
@@ -62,7 +62,7 @@
             "transparency": {
               "expr": {
                 "Literal": {
-                  "Value": "90D"
+                  "Value": "85D"
                 }
               }
             }
