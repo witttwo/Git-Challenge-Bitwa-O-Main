@@ -4,7 +4,7 @@
     {
       "ordinal": 0,
       "scrollPosition": {
-        "x": 1379.0383178929408,
+        "x": 335.22963560111833,
         "y": 0
       },
       "nodes": [
@@ -137,6 +137,19 @@
             "width": 234
           },
           "zIndex": 10
+        },
+        {
+          "location": {
+            "x": 2150.8124218668772,
+            "y": 266.98233164065044
+          },
+          "nodeIndex": "Klucz szkoł",
+          "nodeLineageTag": "551ccc08-575e-43b9-a5bb-b7054d5d98b7",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
         }
       ],
       "name": "All tables",
