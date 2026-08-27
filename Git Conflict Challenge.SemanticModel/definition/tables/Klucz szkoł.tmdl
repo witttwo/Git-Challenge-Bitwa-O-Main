@@ -1,0 +1,37 @@
+table 'Klucz szkoł'
+	lineageTag: 551ccc08-575e-43b9-a5bb-b7054d5d98b7
+
+	column Kolejnosc
+		formatString: 0
+		lineageTag: 2d7900dd-eebb-424c-a4f6-cc18b1504ce1
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Kolejnosc]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Fragment
+		lineageTag: fbde1a76-b4f2-4f34-acf5-f7e9657a7871
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Fragment]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Klucz szkoł' = calculated
+		mode: import
+		source =
+				
+				DATATABLE (
+				    "Kolejnosc", INTEGER,
+				    "Fragment", STRING,
+				    {
+				        { 1, "" },
+				        { 2, "barwiąc szlaki krwią i żelazem, " },
+				        { 3, "" },
+				        { 4, "" }
+				    }
+				)
+
+	annotation PBI_Id = a1e442bba5334cd8895449b4cf8e1d81
+
