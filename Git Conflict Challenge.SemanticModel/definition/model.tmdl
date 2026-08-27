@@ -24,6 +24,7 @@ ref table '_Global Measures'
 ref table 'Parameter: Theme'
 ref table 'Parameter Field: Selection Pareto'
 ref table 'Klucz szkoł'
+ref table 'Gildia Kanwy'
 
 ref cultureInfo en-US
 
