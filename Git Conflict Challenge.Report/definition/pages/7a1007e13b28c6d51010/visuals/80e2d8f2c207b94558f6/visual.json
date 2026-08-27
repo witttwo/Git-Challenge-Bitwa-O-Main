@@ -1,0 +1,53 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "80e2d8f2c207b94558f6",
+  "position": {
+    "x": 1826.6666666666667,
+    "y": 907,
+    "z": 8005,
+    "height": 276.66666666666669,
+    "width": 406.66666666666663,
+    "tabOrder": 4004
+  },
+  "visual": {
+    "visualType": "htmlContent443BE3AD55E043BF878BED274D3A6855",
+    "query": {
+      "queryState": {
+        "content": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Global Measures"
+                    }
+                  },
+                  "Property": "Dziennik Kanwy HTML"
+                }
+              },
+              "queryRef": "_Global Measures.Dziennik Kanwy HTML",
+              "nativeQueryRef": "Dziennik Kanwy HTML"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "5f9f750fb43069109fbd",
+  "position": {
+    "x": 1811.6666666666667,
+    "y": 750,
+    "z": 8006,
+    "height": 143.33333333333334,
+    "width": 425,
+    "tabOrder": 4005
+  },
+  "visual": {
+    "visualType": "htmlContent443BE3AD55E043BF878BED274D3A6855",
+    "query": {
+      "queryState": {
+        "content": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Global Measures"
+                    }
+                  },
+                  "Property": "Szyfr Kanwy HTML"
+                }
+              },
+              "queryRef": "_Global Measures.Szyfr Kanwy HTML",
+              "nativeQueryRef": "Szyfr Kanwy HTML"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
