@@ -1,39 +1,56 @@
 createOrReplace
 
-	table 'Klucz szkoł'
-		lineageTag: 551ccc08-575e-43b9-a5bb-b7054d5d98b7
+	table 'Zakon Miary'
+		lineageTag: 6f29199f-7197-4ada-912c-c71e771c9b41
 
 		column Kolejnosc
 			formatString: 0
-			lineageTag: 2d7900dd-eebb-424c-a4f6-cc18b1504ce1
+			lineageTag: 827833ce-0e57-4bb4-9e2f-119f04400fb8
 			summarizeBy: sum
 			isNameInferred
 			sourceColumn: [Kolejnosc]
 
 			annotation SummarizationSetBy = Automatic
 
+		column Inicjaly
+			lineageTag: 3030bce9-882c-46f5-b0ce-025c4b01d717
+			summarizeBy: none
+			isNameInferred
+			sourceColumn: [Inicjaly]
+
+			annotation SummarizationSetBy = Automatic
+
 		column Fragment
-			lineageTag: fbde1a76-b4f2-4f34-acf5-f7e9657a7871
+			lineageTag: d9aefccc-f365-4d39-b3a4-5a89f22c12a6
 			summarizeBy: none
 			isNameInferred
 			sourceColumn: [Fragment]
 
 			annotation SummarizationSetBy = Automatic
 
-		partition 'Klucz szkoł' = calculated
-			mode: import
-			source =
-					
-					DATATABLE (
-					    "Kolejnosc", INTEGER,
-					    "Fragment", STRING,
-					    {
-					        { 1, "Choć cztery cechy toczą gniewne spory, " },
-					        { 2, "" },
-					        { 3, "" },
-					        { 4, "" }
-					    }
-					)
+		column Komentarz
+			lineageTag: b973586c-6972-4fc7-9ed4-4d1b4bcb4ebd
+			summarizeBy: none
+			isNameInferred
+			sourceColumn: [Komentarz]
 
-		annotation PBI_Id = a1e442bba5334cd8895449b4cf8e1d81
+			annotation SummarizationSetBy = Automatic
+
+		partition 'Zakon Miary' = calculated
+			mode: import
+			source = ```
+					
+					    DATATABLE (
+					        "Kolejnosc", INTEGER, "Inicjaly", STRING, "Fragment", STRING, "Komentarz", STRING,
+					        {
+					            { 10, "COM", "Zakonnik ", "Zakon Miary rosnie w sile." },
+					            { 11, "BO", "[CZASOWNIK] ", "" },
+					            { 12, "KW", "[PRZYMIOTNIK] ", "" },
+					            { 13, "KW", "[RZECZOWNIK] ", "" },
+					            { 14, "BO", "[MIEJSCE]", "" }
+					        }
+					    )
+					```
+
+		annotation PBI_Id = 9628a8dea7774e53b11f9522cc29589d
 
