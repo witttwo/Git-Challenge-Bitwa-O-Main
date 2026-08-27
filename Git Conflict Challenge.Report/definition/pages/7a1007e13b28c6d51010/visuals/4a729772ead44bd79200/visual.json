@@ -1,12 +1,12 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
-  "name": "e4074a8f3ba27e0fd3e3",
+  "name": "4a729772ead44bd79200",
   "position": {
-    "x": 672.000020345052,
-    "y": 746.00006103515625,
+    "x": 1241.6666666666667,
+    "y": 750,
     "z": 8006,
     "height": 143.33333333333334,
-    "width": 440,
+    "width": 425,
     "tabOrder": 4005
   },
   "visual": {
@@ -23,14 +23,32 @@
                       "Entity": "_Global Measures"
                     }
                   },
-                  "Property": "Szyfr Barwy HTML"
+                  "Property": "Szyfr Kalendarza HTML"
                 }
               },
-              "queryRef": "_Global Measures.Szyfr Barwy HTML",
-              "nativeQueryRef": "Szyfr Barwy HTML"
+              "queryRef": "_Global Measures.Szyfr Kalendarza HTML",
+              "nativeQueryRef": "Szyfr Kalendarza HTML"
             }
           ]
         }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "_Global Measures"
+                  }
+                },
+                "Property": "Szyfr Kalendarza HTML"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
       }
     },
     "visualContainerObjects": {

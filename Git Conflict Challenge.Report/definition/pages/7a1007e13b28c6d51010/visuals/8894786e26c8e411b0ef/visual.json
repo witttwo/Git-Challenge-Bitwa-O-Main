@@ -1,9 +1,9 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
-  "name": "0c1117990a19d5028aea",
+  "name": "8894786e26c8e411b0ef",
   "position": {
-    "x": 767.61914934430763,
-    "y": 526.00006103515625,
+    "x": 1338.7619454520093,
+    "y": 530,
     "z": 8004,
     "height": 200,
     "width": 250,
@@ -20,7 +20,7 @@
                 "name": {
                   "expr": {
                     "Literal": {
-                      "Value": "'cech barwy.png'"
+                      "Value": "'szkola kalendarza.png'"
                     }
                   }
                 },
@@ -29,7 +29,7 @@
                     "ResourcePackageItem": {
                       "PackageName": "RegisteredResources",
                       "PackageType": 1,
-                      "ItemName": "cech_barwy955679753441701.png"
+                      "ItemName": "szkola_kalendarza5951169927692561.png"
                     }
                   }
                 },

@@ -1,9 +1,9 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
-  "name": "bfc78349135df1e1cbce",
+  "name": "6f39628dd22233ecaea4",
   "position": {
-    "x": 678.66668701171864,
-    "y": 903.00006103515625,
+    "x": 1250,
+    "y": 907,
     "z": 8005,
     "height": 276.66666666666669,
     "width": 406.66666666666663,
@@ -23,14 +23,32 @@
                       "Entity": "_Global Measures"
                     }
                   },
-                  "Property": "Dziennik Barwy HTML"
+                  "Property": "Dziennik Kalendarza HTML"
                 }
               },
-              "queryRef": "_Global Measures.Dziennik Barwy HTML",
-              "nativeQueryRef": "Dziennik Barwy HTML"
+              "queryRef": "_Global Measures.Dziennik Kalendarza HTML",
+              "nativeQueryRef": "Dziennik Kalendarza HTML"
             }
           ]
         }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "_Global Measures"
+                  }
+                },
+                "Property": "Dziennik Kalendarza HTML"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
       }
     },
     "visualContainerObjects": {
