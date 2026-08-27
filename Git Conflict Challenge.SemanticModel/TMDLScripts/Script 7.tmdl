@@ -1,39 +1,56 @@
 createOrReplace
 
-	table 'Klucz szkoł'
-		lineageTag: 551ccc08-575e-43b9-a5bb-b7054d5d98b7
+	table 'Gildia Kanwy'
+		lineageTag: 2aa760c1-a389-40a3-888c-d288886801c6
 
 		column Kolejnosc
 			formatString: 0
-			lineageTag: 2d7900dd-eebb-424c-a4f6-cc18b1504ce1
+			lineageTag: 831f152c-8c67-4a11-a02a-87f4d38b5666
 			summarizeBy: sum
 			isNameInferred
 			sourceColumn: [Kolejnosc]
 
 			annotation SummarizationSetBy = Automatic
 
+		column Inicjaly
+			lineageTag: 52031ef3-4796-4a80-9e46-2b46ade01bdf
+			summarizeBy: none
+			isNameInferred
+			sourceColumn: [Inicjaly]
+
+			annotation SummarizationSetBy = Automatic
+
 		column Fragment
-			lineageTag: fbde1a76-b4f2-4f34-acf5-f7e9657a7871
+			lineageTag: cee2113d-8ae8-49da-a019-51ad4acad984
 			summarizeBy: none
 			isNameInferred
 			sourceColumn: [Fragment]
 
 			annotation SummarizationSetBy = Automatic
 
-		partition 'Klucz szkoł' = calculated
-			mode: import
-			source =
-					
-					DATATABLE (
-					    "Kolejnosc", INTEGER,
-					    "Fragment", STRING,
-					    {
-					        { 1, "" },
-					        { 2, "" },
-					        { 3, "" },
-					        { 4, "by ramię w ramię dowieźć projekt." }
-					    }
-					)
+		column Komentarz
+			lineageTag: 7b9ff413-1000-4990-9e2d-2a0c93ca9393
+			summarizeBy: none
+			isNameInferred
+			sourceColumn: [Komentarz]
 
-		annotation PBI_Id = a1e442bba5334cd8895449b4cf8e1d81
+			annotation SummarizationSetBy = Automatic
+
+		partition 'Gildia Kanwy' = calculated
+			mode: import
+			source = ```
+					
+					    DATATABLE (
+					        "Kolejnosc", INTEGER, "Inicjaly", STRING, "Fragment", STRING, "Komentarz", STRING,
+					        {
+					            { 40, "COM", "Iluzjonista ", "Gildia Kanwy rzuca urok." },
+					            { 41, "IK", "[CZASOWNIK] ", "" },
+					            { 42, "RB", "[PRZYMIOTNIK] ", "" },
+					            { 43, "IK", "[RZECZOWNIK] ", "" },
+					            { 44, "RB", "[MIEJSCE]", "" }
+					        }
+					    )
+					```
+
+		annotation PBI_Id = 6c762441f1b04b12b84a12d3f34024ee
 
