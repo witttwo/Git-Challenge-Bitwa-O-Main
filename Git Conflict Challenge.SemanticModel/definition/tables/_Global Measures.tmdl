@@ -1364,10 +1364,10 @@ table '_Global Measures'
 			
 			VAR ZbudowanyTekst = 
 			    CONCATENATEX (
-			        'Klucz szkoły',
-			        'Klucz szkoły'[Fragment],
+			        'Klucz szkoł',
+			        'Klucz szkoł'[Fragment],
 			        "",
-			        'Klucz szkoły'[Kolejnosc],
+			        'Klucz szkoł'[Kolejnosc],
 			        ASC
 			    )
 			RETURN
