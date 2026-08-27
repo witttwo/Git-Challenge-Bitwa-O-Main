@@ -1,0 +1,53 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "d7d9212939f1560be8ec",
+  "position": {
+    "x": 112.57141839890249,
+    "y": 904.3333740234375,
+    "z": 8005,
+    "height": 276.66666666666669,
+    "width": 406.66666666666663,
+    "tabOrder": 4004
+  },
+  "visual": {
+    "visualType": "htmlContent443BE3AD55E043BF878BED274D3A6855",
+    "query": {
+      "queryState": {
+        "content": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Global Measures"
+                    }
+                  },
+                  "Property": "Dziennik Zakonu HTML"
+                }
+              },
+              "queryRef": "_Global Measures.Dziennik Zakonu HTML",
+              "nativeQueryRef": "Dziennik Zakonu HTML"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
