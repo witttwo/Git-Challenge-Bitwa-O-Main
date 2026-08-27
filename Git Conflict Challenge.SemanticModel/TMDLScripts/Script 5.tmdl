@@ -1,0 +1,14 @@
+createOrReplace
+
+	table 'Klucz_ZakonMiary' = 
+    DATATABLE (
+        "Kolejnosc", INTEGER, "Inicjaly", STRING, "Fragment", STRING, "Komentarz", STRING,
+        {
+            { 10, "COM", "Zakonnik ", "Zakon Miary rosnie w sile." },
+            { 11, "BO", "[CZASOWNIK] ", "[KOWAL: Jak Ci poszlo pierwsze scalenie?]" },
+            { 12, "KW", "[PRZYMIOTNIK] ", "[SKRYBA: Co bylo najtrudniejsze?]" },
+            { 13, "KW", "[RZECZOWNIK] ", "[ZWIAD: Czy miales ciche konflikty?]" },
+            { 14, "BO", "[MIEJSCE]", "[STRAZNIK: Jak poszlo sklejanie resztek?]" }
+        }
+    )
+
