@@ -1,0 +1,54 @@
+table 'Cech Barwy'
+	lineageTag: 635b6ecc-35bc-4479-9842-a2b3a47c5eb9
+
+	column Kolejnosc
+		formatString: 0
+		lineageTag: db9e004a-a2a0-4cb5-9ed2-11ceaaf7e32a
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Kolejnosc]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Inicjaly
+		lineageTag: 4197ce5e-2be8-4c7f-95ec-a9b8fc4f4db5
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Inicjaly]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Fragment
+		lineageTag: 3ea4e60f-7926-4c53-90a0-56e5773172d4
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Fragment]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Komentarz
+		lineageTag: 9c0a5e7f-6cc4-4328-b553-00363ac820f0
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Komentarz]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Cech Barwy' = calculated
+		mode: import
+		source = ```
+				
+				    DATATABLE (
+				        "Kolejnosc", INTEGER, "Inicjaly", STRING, "Fragment", STRING, "Komentarz", STRING,
+				        {
+				            { 30, "COM", "Alchemik ", "Cech Barwy miesza mikstury." },
+				            { 31, "PM", "[CZASOWNIK] ", "" },
+				            { 32, "MS", "[PRZYMIOTNIK] ", "" },
+				            { 33, "MS", "[RZECZOWNIK] ", "" },
+				            { 34, "PM", "[MIEJSCE]", "" }
+				        }
+				    )
+				```
+
+	annotation PBI_Id = 850bbbd1b53247758b110bbd4f29c865
+
